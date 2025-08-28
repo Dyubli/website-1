@@ -2,8 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-      }
-      
+}
 header {
     background-color: #fdf0f2;
     display: flex;
@@ -17,7 +16,6 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
     font-family: 'Playfair Display', serif; 
 }
-
 .header-container {
     max-width: 1100px;
     display: flex;
@@ -25,14 +23,12 @@ header {
     align-items: center;
     width: 100%;
 }
-
 .logo {
     font-size: 2rem;
     font-weight: 700;
     color: #333;
     letter-spacing: 1px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -40,7 +36,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 nav a {
     text-decoration: none;
     color: #333;
@@ -50,18 +45,15 @@ nav a {
     border-radius: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 nav a:hover {
     background-color: #f8c7cc;
     color: white;
 }
-
 .header-icon {
     font-size: 1.6rem;
     margin-left: 15px;
     user-select: none;
 }
-
 .hero-section {
     position: relative;
     height: 100vh;
@@ -72,43 +64,38 @@ nav a:hover {
     align-items: center;
     text-align: center;
 }
-
 .hero-content {
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: 600;
     margin: 0;
 }
-
 .order-button {
     background-color: rgb(255, 190, 190);
-    border: 2px solid rgb(255, 252, 252);
+    border: 2px solid white;
     padding: 0.8rem 2.5rem;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
-    color:white;
-    scroll-behavior: smooth;
+    color: white;
+    text-decoration: none;
+    display: inline-block; 
 }
-
 .order-button:hover {
     background-color: rgba(247, 158, 158, 0.7);
 }
-
 .products-section {
     text-align: center;
     padding: 5rem 5%;
     background-color: #fae7e7;
     margin: 0;
 }
-
 .products-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -116,42 +103,38 @@ nav a:hover {
     margin-bottom: 2rem;
     color: #444;
 }
-
 .product-grid {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
-
 .product-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    background:transparent;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-
 .product-card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     margin-bottom: 0 auto;
     height: 350px;
     object-fit: cover;
 }
-
 .product-card h3 {
-    margin: 0.5rem 0;
+    margin: 1rem 0 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
 }
-
 .product-card p {
     color: #888;
     font-size: 0.9rem;
     margin: 0;
 }
-
 .holiday-section {
     background-color: rgb(252, 202, 202);
     box-shadow: none;
@@ -159,7 +142,6 @@ nav a:hover {
     padding: 5rem 5%;
     margin: 0;
 }
-
 .holiday-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -168,65 +150,62 @@ nav a:hover {
     margin-bottom: 2rem;
     color: #444;
 }
-
 .footer {
     background-color: #c59b9e; 
     padding: 2rem 1rem;
     text-align: center;
     color: #4d4d4d;
     font-family: 'Playfair Display', serif;
-  }
-  
-  .footer-content p {
+    height: 13rem;
+}
+.footer-content p {
     margin: 0.3rem 0;
     font-size: 20px;
-  }
-  
-  .footer-content a {
+}
+.footer-content a {
     color: #bf4f60;
     text-decoration: none;
     font-weight: 600;
-  }
-  
-  .footer-content a:hover {
+}
+.footer-content a:hover {
     text-decoration: underline;
-  }
-  
-  .social-icons {
+}
+.social-icons {
     margin-top: 1rem;
-  }
-  
-  .social-icon {
+}
+.social-icon {
     color: #bf4f60;
     font-size: 1.4rem;
     margin: 0 0.6rem;
     transition: color 0.3s ease;
-  }
-  
-  .social-icon:hover {
+}
+.social-icon:hover {
     color: #7a2e35;
-  }
-  
-  copyright {
+}
+copyright {
     margin-top: 1.5rem;
     font-size: 0.8rem;
     color: #6b6b6b;
-  }
-  
-  .order-btn {
-    background-color: rgb(255, 190, 190);
-    border: 2px solid rgb(255, 252, 252);
-    padding: 0.8rem 2.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s;
-    color:white;
 }
-
+.order-btn {
+    margin-top: auto; /* Push button to bottom if card grows */
+    background-color: #fbb6b6; /* Pink */
+    border: none;
+    border-radius: 25px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+    min-width: 140px;
+    align-self: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
 .order-btn:hover {
-    background-color: rgba(247, 158, 158, 0.7);
+    background-color: rgb(207, 133, 133);
 }
 
   
