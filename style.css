@@ -125,6 +125,9 @@ nav a:hover {
     height: 350px;
     object-fit: cover;
 }
+.product-card img:hover { 
+    transform: scale(1.05); 
+}
 .product-card h3 {
     margin: 1rem 0 0.5rem;
     font-size: 1.2rem;
@@ -156,11 +159,11 @@ nav a:hover {
     text-align: center;
     color: #4d4d4d;
     font-family: 'Playfair Display', serif;
-    height: 13rem;
+    height: 16rem;
 }
 .footer-content p {
     margin: 0.3rem 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 .footer-content a {
     color: #bf4f60;
@@ -175,18 +178,14 @@ nav a:hover {
 }
 .social-icon {
     color: #bf4f60;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin: 0 0.6rem;
     transition: color 0.3s ease;
 }
 .social-icon:hover {
     color: #7a2e35;
 }
-copyright {
-    margin-top: 1.5rem;
-    font-size: 0.8rem;
-    color: #6b6b6b;
-}
+
 .order-btn {
     margin-top: auto; /* Push button to bottom if card grows */
     background-color: #fbb6b6; /* Pink */
