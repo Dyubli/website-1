@@ -49,11 +49,6 @@ nav a:hover {
     background-color: #f8c7cc;
     color: white;
 }
-.header-icon {
-    font-size: 1.6rem;
-    margin-left: 15px;
-    user-select: none;
-}
 .hero-section {
     position: relative;
     height: 100vh;
@@ -125,16 +120,13 @@ nav a:hover {
     height: 350px;
     object-fit: cover;
 }
-.product-card img:hover { 
-    transform: scale(1.05); 
-}
 .product-card h3 {
     margin: 1rem 0 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
 }
 .product-card p {
-    color: #888;
+    color: #5c5757;
     font-size: 0.9rem;
     margin: 0;
 }
@@ -183,9 +175,8 @@ nav a:hover {
     transition: color 0.3s ease;
 }
 .social-icon:hover {
-    color: #7a2e35;
+    color: #631f26;
 }
-
 .order-btn {
     margin-top: auto;
     background-color: #fbb6b6; 
@@ -205,6 +196,14 @@ nav a:hover {
 }
 .order-btn:hover {
     background-color: rgb(207, 133, 133);
+}
+.footer-box {
+    background-color: #ffffff; /* White background */
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 480px) {
